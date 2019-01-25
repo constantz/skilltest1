@@ -1,4 +1,5 @@
 Jan Klaassen; 5
-Jan de Groot; 7
 Pietje Puk; 10
 Joris; 2
+Jan de Groot; 7
+Aap; 1
