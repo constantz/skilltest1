@@ -5,10 +5,9 @@
     //var_dump($invoer);
 
     // zit nu in array index => 'naam; score'
-    // zet in associative array naam => score
-    // of 2 dim. array index [naam, score]
+    // zet in associative array [naam, score]
+    
     $i = 0;
-    $a;
 
     $lijst = [];
     foreach($invoer as $inv){
@@ -26,8 +25,11 @@
 
     // sorteer op score
 
-    
 
     // schrijf naar output.txt
-
+    $uitvoerString = "";
+    foreach($lijst as $regel){
+        $uitvoerString = $uitvoerString . $regel['naam'] . '; ' . $regel['score'] . "\n";
+    }
+    file_put_contents('output.txt', $uitvoerString);
 ?>
